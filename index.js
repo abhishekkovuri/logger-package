@@ -1,5 +1,5 @@
-const logger = ({ logName = '', value = '' }) => {
-	console.log(`${logName} Malicious Code ${JSON.stringify(value)}`);
+const logger = ({ logName = '', value = '', type = 'log' }) => {
+	console[type](`${logName} ${JSON.stringify(value)}`);
 };
 
 export default logger;
